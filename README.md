@@ -57,7 +57,7 @@ Please refer to `data/README.md` for details of automated data generation pipeli
 Please refer to `model/README.md` for details of training the model with GSM. Since there are some differences between the packages of "model training" and "data generation", we recommend two different installations.
 
 ## Benchmark Evaluation
-First download our constructed [DSR-Bench](https://huggingface.co/datasets/TencentARC/DSR_Suite-Data) as `benchmark.parquet`. Then modify `'PATH_TO_VIDEO_ROOT'` and `'PATH_TO_PARQUET'` in `./VLMEvalKit_mine/vlmeval/dataset/spatial_reasoning.py` to the path of directory containing videos and the path to `benchmark.parquet` respectively.
+First download our constructed [DSR-Bench](https://huggingface.co/datasets/TencentARC/DSR_Suite-Data) as `benchmark.parquet`. Then modify `'PATH_TO_VIDEO_ROOT'` and `'PATH_TO_PARQUET'` in `./VLMEvalKit_mine/vlmeval/dataset/spatial_reasoning.py` to the path of directory containing videos and the path to `benchmark.parquet` respectively. Since our benchmark is build on [Koala-36M](https://github.com/KlingTeam/Koala-36M) and it only provides the url of videos, you can try to download required videos according to [Panda-70M](https://github.com/snap-research/Panda-70M/tree/main/dataset_dataloading).
 
 Our current evaluation framework is based on [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) so that you can adopt your model for evaluation according to its [Development_Guide](https://github.com/open-compass/VLMEvalKit/blob/main/docs/en/Development.md). To evaluate your adopted model or those already supported by VLMEvalKit, run the following command:
 ```bash
