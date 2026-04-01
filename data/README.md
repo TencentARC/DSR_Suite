@@ -20,7 +20,7 @@ Download the following necessary model checkpoints and put them in to the folder
 
 
 ## Video Database Download
-The video database of our QAs is not constrained so that you can use any database as long as the videos are accompanied with captions. In the following we use [Koala-36M](https://github.com/KlingTeam/Koala-36M) as the example. Download its videos and captions. Only preserve the videos with duration between 20s to 120s.
+The video database of our QAs is not constrained so that you can use any database as long as the videos are accompanied with captions. In the following we use [Koala-36M](https://github.com/KlingTeam/Koala-36M) as the example. Download its videos and captions. Only preserve the videos with duration between 20s to 120s. Since Koala-36M only provides the url of videos, you can download videos according to [Panda-70M](https://github.com/snap-research/Panda-70M/tree/main/dataset_dataloading).
 
 ## Video Curation
 Since some videos only describe static scenes, where objects are motionless so that not suitable for dynamic spatial reasoning, we should filter out these videos first. If there are numerous videos to filter, one economical way is prompting LLMs with video captions. We use DeepSeek-R1 as the example:
