@@ -78,6 +78,7 @@ cd VLMEvalKit_mine
 CUDA_VISIBLE_DEVICES=0 python run.py --data Spatial-Reasoning --model Qwen2.5-VL-7B-Instruct-ForVideo-Spatial --work-dir spatial_reasoning
 ```
 
+For evaluation on [VLM4D](https://arxiv.org/abs/2508.02095) and [STI-Bench](https://arxiv.org/abs/2503.23765), the scripts `'qwen_test_*.py'` for general models and our model are under `'model'` and `'model/qwen-vl-finetune'` respectively. You only need to modify the upper cased parameters, which indicate the path of model's checkpoint and the metadata of the benchmark, in these scripts to start evaluation.
 ## Citation
 If you find our work useful, please consider citing:
 
